@@ -11,7 +11,7 @@ const forecast = (lat, long, callback) => {
     } else {
       return callback(
         undefined,
-        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out and it feels like ${body.current.feelslike}.`
+        `${body.current.weather_descriptions[0]}. It is currently ${body.current.temperature} degrees out and it feels like ${body.current.feelslike}. Humidity is ${body.current.humidity}% and pressure is ${body.current.pressure} hpa`
       );
     }
   });
